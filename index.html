@@ -71,10 +71,30 @@
       padding: 10px;
       border-radius: 6px;
     }
+
+    .gradient {
+
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container gradient">
     <img src="logo.png" alt="Logo" class="logo" />
     <h1>Pet da Ka</h1>
     <p class="description">Seu pet vai ter o carinho que ele merece! 🐶🐱</p>
@@ -96,4 +116,5 @@
   </div>
 </body>
 </html>
+
 
